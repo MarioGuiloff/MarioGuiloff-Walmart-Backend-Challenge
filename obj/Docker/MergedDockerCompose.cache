@@ -1,0 +1,11 @@
+services:
+  walmart.api.product:
+    build:
+      context: C:\Proyectos\WalmartChallengeBackEnd
+      dockerfile: Walmart.Api.Product/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: walmartapiproduct
+    ports:
+    - 80/tcp
+version: '3.4'

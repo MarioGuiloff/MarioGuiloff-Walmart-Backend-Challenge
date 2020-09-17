@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  walmart.api.product:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "80"

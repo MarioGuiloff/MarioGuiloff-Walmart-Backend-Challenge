@@ -1,0 +1,9 @@
+version: '3.4'
+
+services:
+  walmart.api.product:
+    image: ${DOCKER_REGISTRY-}walmartapiproduct
+    build:
+      context: .
+      dockerfile: Walmart.Api.Product/Dockerfile
+
